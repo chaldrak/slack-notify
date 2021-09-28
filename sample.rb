@@ -19,7 +19,7 @@ module Clockwork
 		puts "Running #{job}"
 	end
 
-	every(10.seconds, 'message_sent') do
+	every(3.minutes, 'message_sent') do
 		client.notify("Hello There! I am the Bot")
 	end
   
